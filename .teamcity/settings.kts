@@ -33,5 +33,16 @@ project {
             dataToKeep = everything()
             preserveArtifactsDependencies = true
         }
+        keepRule {
+            id = "KEEP_RULE_134"
+            keepAtLeast = days(1245) {
+                since = lastBuild()
+            }
+            dataToKeep = historyAndStatistics {
+                preserveArtifacts = byPattern("+:**/*artifact")
+            }
+            applyPerEachBranch = true
+            preserveArtifactsDependencies = true
+        }
     }
 }
