@@ -38,9 +38,7 @@ project {
             keepAtLeast = days(1245) {
                 since = lastBuild()
             }
-            dataToKeep = historyAndStatistics {
-                preserveArtifacts = byPattern("+:**/*artifact")
-            }
+            dataToKeep = everything()
             applyPerEachBranch = true
             preserveArtifactsDependencies = true
         }
