@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="0b6505b3-fcff-4790-87f3-de9311b79606" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>cleanup8</name>
+  <parameters />
+  <project-extensions>
+    <extension id="KEEP_RULE_117" type="keepRules">
+      <parameters>
+        <param name="filters.1.pattern" value="+:*gggggg" />
+        <param name="filters.1.type" value="branchSpecs" />
+        <param name="keepData.1.type" value="everything" />
+        <param name="limit.buildsCount" value="30" />
+        <param name="limit.type" value="lastNBuilds" />
+        <param name="preserveArtifacts" value="true" />
+        <param name="ruleDisabled" value="false" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_59" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="rootId" value="Cleanup8_HttpsGithubComInnayanCleanup8" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup />
+</project>
+
